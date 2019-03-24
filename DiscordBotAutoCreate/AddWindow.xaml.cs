@@ -31,7 +31,7 @@ namespace DiscordBotAutoCreate
             Json.command.Add(QTextbox.Text, new JObject(
                 new JProperty("answer", ATextbox.Text),
                 new JProperty("PLUS", B_Check.IsChecked)));
-            File.WriteAllText(Json.BotSettingpath, Json.command.ToString());
+            File.WriteAllText(Json.BotSettingpath, Json.rss.ToString());
             Main.ListBoxLoad();
             Main.Show();
             Close();
