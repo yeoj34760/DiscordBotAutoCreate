@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DiscordBotAutoCreate"
         mc:Ignorable="d"
-        Title="Modified" Height="146" Width="292">
+        Title="Modified" Height="146" Width="292" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" MouseLeftButtonDown="Window_MouseLeftButtonDown">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="199,85,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <TextBox x:Name="B_TextBox" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="264"/>
+        <Button Content="수정" HorizontalAlignment="Left" Margin="207,116,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBox x:Name="B_TextBox" HorizontalAlignment="Left" Height="101" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="272"/>
+        <CheckBox x:Name="B_CheckBox" Content="은?/는? 자동추가" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

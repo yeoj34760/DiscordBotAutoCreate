@@ -32,7 +32,7 @@ namespace DiscordBotAutoCreate
 
         public void ListBoxLoad()
         {
-            
+
             CommandLlistBox.Items.Clear();
             foreach (var item in Json.command) CommandLlistBox.Items.Add(item.Key);
             CommandLlistBox.SelectedIndex = 0;
@@ -55,7 +55,12 @@ namespace DiscordBotAutoCreate
         private void ModifiedButton_Click(object sender, RoutedEventArgs e)
         {
             var Mod = new Modified();
-            Mod.temp = CommandLlistBox.SelectedItem.ToString();
+
+            Mod.B_name = CommandLlistBox.SelectedItem.ToString();
+            Mod.Title = Mod.B_name;
+
+            Mod.B_CheckBox.IsChecked = (Json.command[CommandLlistBox.SelectedItem.ToString()]["PLUS"].ToString() == "True") ? true : false;
+            Mod.B_TextBox.Text = Json.command[CommandLlistBox.SelectedItem.ToString()]["answer"].ToString();
             Mod.Show();
             Close();
         }

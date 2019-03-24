@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DiscordBotAutoCreate"
         mc:Ignorable="d"
-        Title="TokenWindow" Height="105.034" Width="286.156">
+        Title="TokenWindow" Height="69.174" Width="286.156" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" MouseLeftButtonDown="Window_MouseLeftButtonDown">
     <Grid>
-        <Label Content="토큰 : " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
-        <TextBox x:Name="TokenTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" Margin="60,13,0,0"/>
-        <Button Content="저장" HorizontalAlignment="Left" VerticalAlignment="Top" Width="278" Margin="0,48,0,0" Click="Button_Click" Height="26"/>
+        <Label Content="토큰 : " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,9,0,0"/>
+        <TextBox x:Name="TokenTextBox" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="208" Margin="70,10,0,0"/>
+        <Button Content="저장" HorizontalAlignment="Left" VerticalAlignment="Top" Width="268" Margin="10,38,0,0" Click="Button_Click" Height="24"/>
 
     </Grid>
 </Window>

@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DiscordBotAutoCreate"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         <ListBox x:Name="CommandLlistBox" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="151" SelectionChanged="CommandLlistBox_SelectionChanged"/>
-        <Button x:Name="AddButton" Content="추가" HorizontalAlignment="Left" Margin="156,389,0,0" VerticalAlignment="Top" Width="75" Click="AddButton_Click"/>
-        <Button x:Name="DeleButton" Content="삭제" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="236,389,0,0" Click="DeleButton_Click"/>
-        <Button x:Name="ModifiedButton" Content="수정" HorizontalAlignment="Left" Margin="316,389,0,0" VerticalAlignment="Top" Width="75" Click="ModifiedButton_Click" IsEnabled="False"/>
-        <Button Content="Button" HorizontalAlignment="Center" Width="75" Margin="707,389,0,0" Click="Button_Click" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+        <Button x:Name="AddButton" Content="추가" HorizontalAlignment="Left" Margin="156,376,0,0" VerticalAlignment="Top" Width="75" Click="AddButton_Click"/>
+        <Button x:Name="DeleButton" Content="삭제" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="236,376,0,0" Click="DeleButton_Click"/>
+        <Button x:Name="ModifiedButton" Content="수정" HorizontalAlignment="Left" Margin="316,376,0,0" VerticalAlignment="Top" Width="75" Click="ModifiedButton_Click"/>
+        <Button Content="봇 실행" HorizontalAlignment="Center" Width="75" Margin="709,376,10,0" Click="Button_Click" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
         <Label x:Name="answerLabel" Content="Label" HorizontalAlignment="Left" Margin="156,10,0,0" VerticalAlignment="Top"/>
-        <Button Content="token 수정" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="707,10,0,0" Click="TokenButton_Click"/>
+        <Button Content="token 수정" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="709,21,0,0" Click="TokenButton_Click"/>
 
 
     </Grid>

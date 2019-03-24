@@ -20,20 +20,27 @@ namespace DiscordBotAutoCreate
     /// </summary>
     public partial class Modified : Window
     {
+        
         public Modified()
         {
             InitializeComponent();
         }
-        public string temp;
-
+        public string B_name;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var Main = new MainWindow();
-            Json.command[temp] = B_TextBox.Text;
-            File.WriteAllText(Json.BotSettingpath, Json.command.ToString());
+            
+            Json.command[B_name]["answer"] = B_TextBox.Text;
+            Json.command[B_name]["PLUS"] = B_CheckBox.IsChecked;
+            File.WriteAllText(Json.BotSettingpath, Json.rss.ToString());
             Main.ListBoxLoad();
             Main.Show();
             Close();
+        }
+
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
         }
     }
 }

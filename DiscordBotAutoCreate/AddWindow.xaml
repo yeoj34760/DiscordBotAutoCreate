@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DiscordBotAutoCreate"
         mc:Ignorable="d"
-        Title="AddWindow" Height="216" Width="407">
+        Title="AddWindow" Height="216" Width="407" MouseLeftButtonDown="Window_MouseLeftButtonDown" WindowStyle="None" WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBox x:Name="QTextbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="379" Margin="10,10,0,0" TextChanged="QTextbox_TextChanged"/>
-        <TextBox x:Name="ATextbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="379" Margin="10,38,0,0"/>
-        <Button Content="추가" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="314,155,0,0" Click="Button_Click"/>
-        <CheckBox x:Name="B_Check" Content="은?/는? 자동추가" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="QTextbox" HorizontalAlignment="Left" Height="56" TextWrapping="Wrap" VerticalAlignment="Top" Width="379" Margin="10,10,0,0" TextChanged="QTextbox_TextChanged" Text="내용"/>
+        <TextBox x:Name="ATextbox" HorizontalAlignment="Left" Height="102" TextWrapping="Wrap" VerticalAlignment="Top" Width="379" Margin="10,71,0,0" Text="답변"/>
+        <Button Content="추가" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="314,178,0,0" Click="Button_Click"/>
+        <CheckBox x:Name="B_Check" Content="은?/는? 자동추가" HorizontalAlignment="Left" Margin="10,183,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
