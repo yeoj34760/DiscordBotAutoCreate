@@ -1,0 +1,14 @@
+{
+  "token": "",
+  "prefix": "!",
+  "command": {
+    "치킨": {
+      "answer": "맛있음!",
+      "PLUS": true
+    },
+    "안녕": {
+      "answer": "방가방가",
+      "PLUS": false
+    }
+  }
+}
